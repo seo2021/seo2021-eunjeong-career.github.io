@@ -13,7 +13,6 @@ const Information = ({ information }: Pick<DataProps, "information">) => {
           <span className="text-PRIMARY font-semibold">{information.name}</span>
         </h1>
         <div className="flex gap-1">
-          <code>총 경력 3년 8개월</code>
           {information.contact.map((contact) => (
             <ContactItem
               key={contact.id}

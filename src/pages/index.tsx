@@ -20,11 +20,6 @@ const Home: NextPage<DataProps> = ({
   resumeTitle,
   information,
   workExperience,
-  project,
-  activity,
-  education,
-  certificate,
-  award,
 }) => {
   return (
     <>
@@ -33,11 +28,6 @@ const Home: NextPage<DataProps> = ({
       <Layout>
         <Information information={information} />
         <WorkExperience workExperience={workExperience} />
-        <Project project={project} />
-        <Activity activity={activity} />
-        <Education education={education} />
-        <Certificate certificate={certificate} />
-        <Award award={award} />
       </Layout>
       <Footer contact={information.contact} name={information.name} />
     </>
@@ -65,16 +55,13 @@ export const getStaticProps = async () => {
     },
   );
 
-  const projectWithData = objectData.project.map(async (item: ProjectProps) => {
-    return getImgSrc({ section: "project", item: await getMd({ section: "project", item }) });
-  });
+
 
   return {
     props: {
       ...objectData,
       information: await informationWithData,
       workExperience: await Promise.all(workExperienceWithData),
-      project: await Promise.all(projectWithData),
     },
   };
 };
@@ -84,7 +71,7 @@ const getMd = async ({
   item,
 }: {
   section: string;
-  item: InformationProps | ProjectProps | WorkExperienceProps;
+  item: InformationProps | WorkExperienceProps;
 }) => {
   try {
     const markdownModule = await import(
@@ -102,7 +89,7 @@ const getImgSrc = async ({
   item,
 }: {
   section: string;
-  item: InformationProps | ProjectProps | WorkExperienceProps;
+  item: InformationProps | WorkExperienceProps;
 }) => {
   const imgSrc = `/images/${section}/${"id" in item ? item.id : "profile"}.png`;
   const filePath = path.join(process.cwd(), "public", imgSrc);

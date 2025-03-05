@@ -18,7 +18,7 @@ const DEFAULT_SEO = {
     site_name: "",
     images: [
       {
-        url: "",
+        url: "/share.png",
         width: 285,
         height: 167,
         alt: "",
@@ -34,7 +34,7 @@ const DEFAULT_SEO = {
   additionalMetaTags: [
     {
       name: "application-name",
-      content: "서은정 | 경력기술서,
+      content: "서은정 | 경력기술서",
     },
     {
       name: "msapplication-tooltip",

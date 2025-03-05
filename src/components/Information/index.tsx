@@ -22,8 +22,8 @@ const Information = ({ information }: Pick<DataProps, "information">) => {
               {contact.name}
             </ContactItem>
           ))}
-          <span class=" bg-BLACK dark:bg-white py-[2px] px-1.5 rounded-md text-xs font-medium font-mono whitespace-nowrap text-white dark:text-BLACK">총 경력 3년 8개월</span>
         </div>
+        <span class=" bg-BLACK dark:bg-white py-[2px] px-1.5 rounded-md text-xs font-medium font-mono whitespace-nowrap text-white dark:text-BLACK">총 경력 3년 8개월</span>
       </div>
       <Introduce markdown={information.markdown} />
     </div>

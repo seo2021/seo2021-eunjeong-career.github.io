@@ -7,6 +7,23 @@ import type { AppProps } from "next/app";
  * @description SEO를 위해 본인의 정보로 수정해주세요.
  */
 const DEFAULT_SEO = {
+  title: "",
+  description: "",
+  canonical: "",
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    url: "",
+    title: "",
+    site_name: "",
+    images: [
+      {
+        url: "",
+        width: 285,
+        height: 167,
+        alt: "",
+      },
+    ],
   },
   additionalLinkTags: [
     {

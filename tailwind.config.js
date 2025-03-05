@@ -28,7 +28,7 @@ module.exports = {
         /**
          * @description code tag, link hover icon에 사용되는 컬러입니다.
          */
-        PRIMARY_HEAVY: "#546F7F",
+        PRIMARY_HEAVY: "#5BC4FF",
 
         /**
          * @description 페이지 최상단 gradient의 시작 컬러입니다.

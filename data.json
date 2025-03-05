@@ -5,6 +5,11 @@
 
   "information": {
     "name": "서은정",
+    "contact": [
+      { "id": 0, "name": "", "href": "", "isEmail": true },
+      { "id": 1, "name": "", "href": "" },
+      { "id": 2, "name": "", "href": "" }
+    ]
   },
 
   "workExperience": [

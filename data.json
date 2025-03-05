@@ -1,10 +1,10 @@
 {
   "resumeTitle": {
-    "title": "Hong Gil Dong"
+    "title": "Eunjeong Seo"
   },
 
   "information": {
-    "name": "홍길동",
+    "name": "서은정",
     "contact": [
       { "id": 0, "name": "Email", "href": "honggildong@gmail.com", "isEmail": true },
       { "id": 1, "name": "Github", "href": "https://github.com/honggildong" },

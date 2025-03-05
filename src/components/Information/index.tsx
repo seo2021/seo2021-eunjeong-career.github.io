@@ -1,3 +1,4 @@
+export const fetchCache = 'force-no-store';
 import ContactItem from "../ContactItem";
 import Introduce from "./Introduce";
 

@@ -23,7 +23,7 @@ module.exports = {
         /**
          * @description 자기소개의 이름 부분, code tag의 darkmode에 사용되는 컬러입니다.
          */
-        PRIMARY: "#2E627F",
+        PRIMARY: "#546F7F",
 
         /**
          * @description code tag, link hover icon에 사용되는 컬러입니다.

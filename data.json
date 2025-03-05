@@ -5,11 +5,7 @@
 
   "information": {
     "name": "서은정",
-    "contact": [
-      { "id": 0, "name": "Email", "href": "honggildong@gmail.com", "isEmail": true },
-      { "id": 1, "name": "Github", "href": "https://github.com/honggildong" },
-      { "id": 2, "name": "Blog", "href": "https://velog.io/@honggildong" }
-    ]
+
   },
 
   "workExperience": [

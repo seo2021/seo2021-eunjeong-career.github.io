@@ -51,6 +51,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <DefaultSeo {...DEFAULT_SEO} />
+      <DefaultSeo noindex={true}, nofollow={true} />
       <ThemeProvider attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>

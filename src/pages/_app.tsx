@@ -44,6 +44,10 @@ const DEFAULT_SEO = {
       name: "viewport",
       content: "width=device-width, initial-scale=1",
     },
+    {
+      name: "robots",
+      content: "noindex, nofollow", // 검색 엔진 크롤링 방지
+    },
   ],
 };
 
@@ -51,7 +55,6 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <DefaultSeo {...DEFAULT_SEO} />
-      <DefaultSeo noindex={true}, nofollow={true} />
       <ThemeProvider attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>
